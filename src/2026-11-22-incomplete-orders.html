@@ -1,0 +1,57 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Hind;font-weight:500;src:url(../fonts/node_modules/@fontsource/hind-siliguri/files/hind-siliguri-bengali-500-normal.woff2)}
+@font-face{font-family:Hind;font-weight:600;src:url(../fonts/node_modules/@fontsource/hind-siliguri/files/hind-siliguri-bengali-600-normal.woff2)}
+@font-face{font-family:Hind;font-weight:700;src:url(../fonts/node_modules/@fontsource/hind-siliguri/files/hind-siliguri-bengali-700-normal.woff2)}
+@font-face{font-family:NotoB;font-weight:900;src:url(../fonts/node_modules/@fontsource/noto-sans-bengali/files/noto-sans-bengali-bengali-900-normal.woff2)}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1080px;overflow:hidden;font-family:Hind,Inter,system-ui,sans-serif;color:#1b1f6e;
+ background:linear-gradient(180deg,#fff7f0 0%,#ffffff 55%,#eef0ff 100%)}
+.blob{position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;background:#ff8a3d22}
+.top{position:absolute;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;font:400 30px Inter,system-ui,sans-serif}.brand b{font-weight:700}
+.brand img{width:54px;height:54px;border-radius:14px}
+.pill{font:700 22px Hind,Inter,sans-serif;background:#ff8a3d;color:#fff;padding:8px 20px;border-radius:999px}
+h1{position:absolute;left:64px;right:64px;top:146px;font:900 66px/1.2 NotoB,Hind,Inter,sans-serif;text-align:center}
+h1 span{color:#3a3fd4}
+.sub{position:absolute;left:100px;right:100px;top:318px;text-align:center;font:500 29px/1.45 Hind,Inter,sans-serif;color:#4b5196}
+/* flow */
+.flow{position:absolute;left:64px;right:64px;top:430px;display:grid;grid-template-columns:1fr 64px 1fr;align-items:center}
+.box{background:#fff;border-radius:26px;padding:24px 24px;box-shadow:0 16px 40px #1b1f6e18;border:1px solid #e9eaf7;height:340px}
+.box h4{font:700 24px Hind,Inter,sans-serif;display:flex;align-items:center;gap:10px}
+.box h4 i{font-style:normal;font-size:28px}
+.f{margin-top:14px;display:grid;gap:9px}
+.f div{background:#f4f5fb;border-radius:12px;padding:9px 14px;font:500 20px Hind,Inter,sans-serif;color:#334155;display:flex;justify-content:space-between}
+.f div b{color:#1b1f6e;font-weight:700}
+.x{margin-top:14px;text-align:center;font:700 21px Hind,Inter,sans-serif;color:#e11d48;background:#ffe4e6;border-radius:12px;padding:8px}
+.arrow{text-align:center;font:900 46px Inter,sans-serif;color:#ff8a3d}
+.save{border:2px solid #3a3fd4}
+.row{display:flex;align-items:center;gap:12px;margin-top:14px;background:#eef0ff;border-radius:14px;padding:12px 14px}
+.row .av{width:46px;height:46px;border-radius:50%;background:#3a3fd4;color:#fff;display:flex;align-items:center;justify-content:center;font:700 20px Hind,Inter,sans-serif;flex:none}
+.row p{font:700 21px Hind,Inter,sans-serif;line-height:1.2}.row small{font:500 17px Hind,Inter,sans-serif;color:#6b70a8}
+.call{margin-top:14px;display:flex;gap:10px}
+.call span{flex:1;text-align:center;font:700 20px Hind,Inter,sans-serif;border-radius:12px;padding:10px}
+.call .a{background:#22c55e;color:#fff}.call .b{background:#fff;border:2px solid #3a3fd4;color:#3a3fd4}
+.chips{position:absolute;left:64px;right:64px;top:806px;display:flex;justify-content:center;gap:12px}.chips div{font:600 22px Hind,Inter,sans-serif;background:#fff;border:1px solid #e3e5f7;border-radius:999px;padding:9px 20px;box-shadow:0 6px 16px #1b1f6e10}
+.cta{position:absolute;left:64px;right:64px;bottom:52px;height:92px;border-radius:24px;background:#1b1f6e;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 30px}
+.cta b{font:600 26px Hind,Inter,sans-serif}
+.cta span{font:700 27px Hind,Inter,sans-serif;background:#ff8a3d;padding:13px 28px;border-radius:16px}
+</style></head><body>
+<div class="blob"></div>
+<div class="top"><div class="brand"><img src="logo-mark.svg"><span><b>cloud</b>commerce</span></div><div class="pill">💡 Incomplete Order</div></div>
+<h1>অর্ডার না করেই চলে গেল?<br><span>কাস্টমার হারাবেন না</span></h1>
+<div class="sub">চেকআউটে নাম-নম্বর দিয়ে চলে গেলেও তথ্য থেকে যায় আপনার অ্যাডমিন প্যানেলে।</div>
+<div class="flow">
+ <div class="box"><h4><i>🛒</i>চেকআউট পেজে</h4>
+  <div class="f"><div>নাম <b>রাকিব</b></div><div>ফোন <b>017XX-XXXXXX</b></div><div>পণ্য <b>স্মার্ট ওয়াচ</b></div></div>
+  <div class="x">✕ অর্ডার না করেই চলে গেছে</div>
+ </div>
+ <div class="arrow">→</div>
+ <div class="box save"><h4><i>📋</i>আপনার Admin-এ</h4>
+  <div class="row"><div class="av">র</div><div><p>রাকিব · স্মার্ট ওয়াচ</p><small>Incomplete Order</small></div></div>
+  <div class="call"><span class="a">📞 ফোন করে কনফার্ম করুন</span></div>
+  <p style="margin-top:14px;font:600 20px/1.35 Hind,Inter,sans-serif;color:#4b5196">একটা ফোনেই হারানো বিক্রি ফিরে আসতে পারে</p>
+ </div>
+</div>
+<div class="chips"><div>✅ নাম ও ফোন সেভ</div><div>✅ কোন পণ্য দেখছিল</div><div>✅ পরে ফোনে বিক্রি</div></div>
+<div class="cta"><b>হারানো অর্ডার ফিরিয়ে আনুন, Cloud Commerce দিয়ে</b><span>ইনবক্স করুন →</span></div>
+</body></html>
