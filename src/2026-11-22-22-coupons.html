@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Hind;font-weight:500;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-500-normal.woff2)}
+@font-face{font-family:Hind;font-weight:600;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-600-normal.woff2)}
+@font-face{font-family:Hind;font-weight:700;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-700-normal.woff2)}
+@font-face{font-family:NotoB;font-weight:900;src:url(FONTS/noto-sans-bengali/files/noto-sans-bengali-bengali-900-normal.woff2)}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1080px;overflow:hidden;color:#fff;font-family:Hind,Inter,system-ui,sans-serif;
+ background:radial-gradient(620px 520px at 100% 0%,#ff8a3d2e,transparent 70%),radial-gradient(600px 500px at 0% 100%,#3a3fd455,transparent 70%),#12144a}
+.top{position:absolute;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;font:400 30px Inter,system-ui,sans-serif}.brand b{font-weight:700}
+.brand img{width:54px;height:54px;border-radius:14px}
+.pill{font:700 22px Hind,Inter,sans-serif;background:#ff8a3d;padding:8px 20px;border-radius:999px}
+h1{position:absolute;left:64px;top:140px;width:600px;font:900 58px/1.22 NotoB,Hind,Inter,sans-serif}
+h1 span{color:#ffb27a}
+.sub{position:absolute;left:66px;top:368px;width:560px;font:500 27px/1.45 Hind,Inter,sans-serif;color:#cfd3ff}
+/* coupon ticket */
+.tk{position:absolute;right:64px;top:150px;width:330px;height:300px;border-radius:26px;background:linear-gradient(150deg,#ff8a3d,#ff6a1a);transform:rotate(5deg);box-shadow:0 30px 60px #0008;padding:28px 26px;color:#fff}
+.tk:before,.tk:after{content:"";position:absolute;top:186px;width:40px;height:40px;border-radius:50%;background:#12144a}
+.tk:before{left:-20px}.tk:after{right:-20px}
+.tk small{font:700 20px Hind,Inter,sans-serif;opacity:.9}
+.tk .off{font:900 92px/1 Inter,sans-serif;margin-top:8px}
+.tk .off i{font-style:normal;font-size:44px}
+.tk .line{position:absolute;left:26px;right:26px;top:205px;border-top:3px dashed #ffffff88}
+.tk .code{position:absolute;left:26px;right:26px;bottom:24px;font:800 30px Inter,sans-serif;letter-spacing:4px;background:#ffffff26;border-radius:12px;text-align:center;padding:8px 0}
+.grid{position:absolute;left:64px;right:64px;top:510px;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.t{background:#ffffff10;border:1px solid #ffffff22;border-radius:24px;padding:34px 26px;display:flex;gap:14px;align-items:flex-start}
+.t i{font-style:normal;font-size:32px;line-height:1}
+.t p{font:700 27px/1.25 Hind,Inter,sans-serif}.t small{display:block;margin-top:6px;font:500 21px/1.35 Hind,Inter,sans-serif;color:#b9bdf0}
+.cta{position:absolute;left:64px;right:64px;bottom:50px;height:92px;border-radius:24px;background:#fff;color:#1b1f6e;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 30px}
+.cta b{font:600 25px Hind,Inter,sans-serif}
+.cta span{font:700 27px Hind,Inter,sans-serif;color:#fff;background:#ff8a3d;padding:13px 28px;border-radius:16px}
+</style></head><body>
+<div class="top"><div class="brand"><img src="assets/logo-mark.svg"><span><b>cloud</b>commerce</span></div><div class="pill">🎟️ কুপন কোড</div></div>
+<h1>ছাড় দিন নিজের<br>নিয়মে, <span>লস ছাড়া</span></h1>
+<div class="sub">কত ছাড়, কতদিন, কতবার — সব আপনি ঠিক করবেন। কাস্টমার চেকআউটে কোড দিলেই হিসাব হয়ে যায়।</div>
+<div class="tk"><small>বিশেষ অফার</small><div class="off">১০<i>% ছাড়</i></div><div class="line"></div><div class="code">EID10</div></div>
+<div class="grid">
+ <div class="t"><i>％</i><div><p>শতাংশ বা নির্দিষ্ট টাকা</p><small>১০% ছাড় অথবা ১০০ টাকা কম</small></div></div>
+ <div class="t"><i>🧾</i><div><p>সর্বনিম্ন অর্ডার</p><small>যেমন ১০০০ টাকার উপরে হলে</small></div></div>
+ <div class="t"><i>🔝</i><div><p>সর্বোচ্চ ছাড়ের সীমা</p><small>বড় অর্ডারেও ছাড় নিয়ন্ত্রণে</small></div></div>
+ <div class="t"><i>📅</i><div><p>শুরু-শেষ তারিখ আর ব্যবহারের সংখ্যা</p><small>সময় বা সংখ্যা শেষ, কোড বন্ধ</small></div></div>
+</div>
+<div class="cta"><b>ঈদ, ফ্ল্যাশ সেল, ফিরে আসা কাস্টমার — সবখানে কাজে লাগে</b><span>ইনবক্স করুন →</span></div>
+</body></html>
