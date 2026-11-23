@@ -1,0 +1,54 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Hind;font-weight:500;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-500-normal.woff2)}
+@font-face{font-family:Hind;font-weight:600;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-600-normal.woff2)}
+@font-face{font-family:Hind;font-weight:700;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-700-normal.woff2)}
+@font-face{font-family:NotoB;font-weight:900;src:url(FONTS/noto-sans-bengali/files/noto-sans-bengali-bengali-900-normal.woff2)}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1080px;overflow:hidden;color:#fff;font-family:Hind,Inter,system-ui,sans-serif;
+ background:radial-gradient(640px 560px at 100% 30%,#3a3fd466,transparent 70%),radial-gradient(520px 460px at 0% 100%,#ff8a3d2e,transparent 70%),#10123c}
+.top{position:absolute;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;font:400 30px Inter,system-ui,sans-serif}.brand b{font-weight:700}
+.brand img{width:54px;height:54px;border-radius:14px}
+.pill{font:700 22px Hind,Inter,sans-serif;background:#ff8a3d;padding:8px 20px;border-radius:999px}
+h1{position:absolute;left:64px;width:560px;top:150px;font:900 58px/1.22 NotoB,Hind,Inter,sans-serif}
+h1 span{color:#ffb27a}
+.sub{position:absolute;left:64px;width:540px;top:330px;font:500 26px/1.45 Hind,Inter,sans-serif;color:#cfd3ff}
+.pts{position:absolute;left:64px;width:540px;top:470px;display:grid;gap:26px}
+.pt{display:flex;gap:14px;align-items:center;font:600 25px/1.3 Hind,Inter,sans-serif}
+.pt i{font-style:normal;width:46px;height:46px;border-radius:14px;background:#ffffff12;border:1px solid #ffffff26;display:grid;place-items:center;flex-shrink:0;font-size:23px}
+.phone{position:absolute;right:64px;top:170px;width:360px;height:560px;border-radius:46px;background:linear-gradient(160deg,#2c3170,#0b0d2e);padding:14px;border:1px solid #ffffff2a;box-shadow:0 40px 80px -30px #000}
+.scr{width:100%;height:100%;border-radius:34px;background:#f6f7fb;color:#1b1f6e;overflow:hidden;padding:24px 22px}
+.scr h4{font:700 22px Inter,sans-serif}
+.scr .id{margin-top:4px;font:600 15px Inter,sans-serif;color:#6a6f94}
+.st{position:relative;margin-top:34px;padding-left:44px}
+.st::before{content:"";position:absolute;left:14px;top:8px;bottom:30px;width:3px;background:linear-gradient(#3a3fd4 70%,#d9dbef 70%)}
+.s{position:relative;margin-bottom:38px}
+.s::before{content:"✓";position:absolute;left:-44px;top:0;width:31px;height:31px;border-radius:50%;background:#3a3fd4;color:#fff;display:grid;place-items:center;font:700 16px Inter,sans-serif}
+.s.now::before{content:"";background:#ff8a3d;box-shadow:0 0 0 7px #ff8a3d33}
+.s.next::before{content:"";background:#d9dbef}
+.s b{display:block;font:700 18px Inter,sans-serif}
+.s small{display:block;font:500 14px Inter,sans-serif;color:#6a6f94;margin-top:2px}
+.s.next b{color:#9aa0c3}
+.cta{position:absolute;left:64px;right:64px;bottom:50px;height:92px;border-radius:24px;background:#fff;color:#1b1f6e;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 30px}
+.cta b{font:600 25px Hind,Inter,sans-serif}
+.cta span{font:700 27px Hind,Inter,sans-serif;color:#fff;background:#ff8a3d;padding:13px 28px;border-radius:16px}
+</style></head><body>
+<div class="top"><div class="brand"><img src="assets/logo-mark.svg"><span><b>cloud</b>commerce</span></div><div class="pill">📍 অর্ডার ট্র্যাকিং</div></div>
+<h1>"অর্ডার কোথায়?"<br>কাস্টমার <span>নিজেই দেখবে</span></h1>
+<div class="sub">আপনার ওয়েবসাইটেই আলাদা ট্র্যাকিং পেজ। বারবার কল আর মেসেজের ঝামেলা কমে।</div>
+<div class="pts">
+ <div class="pt"><i>🔎</i>ট্র্যাকিং আইডি দিলেই অর্ডারের অবস্থা</div>
+ <div class="pt"><i>🚚</i>কুরিয়ারের আপডেট নিজে থেকেই বসে যায়</div>
+ <div class="pt"><i>🧾</i>সাথে অর্ডারের বিস্তারিত আর ইনভয়েস</div>
+</div>
+<div class="phone"><div class="scr">
+ <h4>Track your order</h4><div class="id">#CC-1042 · মায়া শপ</div>
+ <div class="st">
+  <div class="s"><b>Order Placed</b><small>We have received your order</small></div>
+  <div class="s"><b>Processing</b><small>Order is being prepared</small></div>
+  <div class="s now"><b>Shipped</b><small>Handed to delivery partner</small></div>
+  <div class="s next"><b>Delivered</b><small>Package has arrived</small></div>
+ </div>
+</div></div>
+<div class="cta"><b>৩০ দিন ফ্রিতে নিজের ওয়েবসাইট চালিয়ে দেখুন</b><span>ইনবক্স করুন</span></div>
+</body></html>
