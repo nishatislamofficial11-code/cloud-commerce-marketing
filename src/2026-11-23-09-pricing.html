@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:Hind;font-weight:500;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-500-normal.woff2)}
+@font-face{font-family:Hind;font-weight:600;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-600-normal.woff2)}
+@font-face{font-family:Hind;font-weight:700;src:url(FONTS/hind-siliguri/files/hind-siliguri-bengali-700-normal.woff2)}
+@font-face{font-family:NotoB;font-weight:900;src:url(FONTS/noto-sans-bengali/files/noto-sans-bengali-bengali-900-normal.woff2)}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1080px;overflow:hidden;color:#1b1f6e;font-family:Hind,Inter,system-ui,sans-serif;
+ background:radial-gradient(560px 460px at 100% 0%,#ff8a3d26,transparent 70%),radial-gradient(620px 520px at 0% 100%,#3a3fd41f,transparent 70%),#f6f7ff}
+.top{position:absolute;left:64px;right:64px;top:56px;display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;align-items:center;gap:14px;font:400 30px Inter,system-ui,sans-serif;color:#1b1f6e}.brand b{font-weight:700}
+.brand img{width:54px;height:54px;border-radius:14px}
+.pill{font:700 22px Hind,Inter,sans-serif;background:#1b1f6e;color:#fff;padding:8px 20px;border-radius:999px}
+h1{position:absolute;left:64px;top:140px;width:560px;font:900 60px/1.2 NotoB,Hind,Inter,sans-serif}
+h1 span{color:#ff6a1a}
+.sub{position:absolute;left:66px;top:372px;width:520px;font:500 27px/1.45 Hind,Inter,sans-serif;color:#4a4f86}
+/* receipt card */
+.rc{position:absolute;right:64px;top:132px;width:372px;background:#fff;border-radius:26px;box-shadow:0 30px 60px -20px #1b1f6e40;padding:26px 28px;border:1px solid #e1e4f3}
+.rc h3{font:700 24px Hind,Inter,sans-serif;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;font:600 22px/1.25 Hind,Inter,sans-serif;color:#4a4f86;padding:7px 0;border-bottom:1px dashed #d9dcf0}
+.row b{color:#1b1f6e;font:700 22px Inter,Hind,sans-serif}
+.tot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;background:#3a3fd4;color:#fff;border-radius:16px;padding:12px 16px;font:700 23px Hind,Inter,sans-serif}
+.tot b{font:800 26px Inter,Hind,sans-serif}
+.grid{position:absolute;left:64px;right:64px;top:572px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.t{background:#fff;border:1px solid #e1e4f3;border-radius:24px;padding:32px 24px;display:flex;gap:14px;align-items:flex-start}
+.t i{font-style:normal;font-size:30px;line-height:1}
+.t p{font:700 26px/1.25 Hind,Inter,sans-serif}.t small{display:block;margin-top:6px;font:500 21px/1.35 Hind,Inter,sans-serif;color:#5a5f92}
+.cta{position:absolute;left:64px;right:64px;bottom:50px;height:92px;border-radius:24px;background:#1b1f6e;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 14px 0 30px}
+.cta b{font:600 25px Hind,Inter,sans-serif}
+.cta span{font:700 27px Hind,Inter,sans-serif;color:#fff;background:#ff8a3d;padding:13px 28px;border-radius:16px}
+</style></head><body>
+<div class="top"><div class="brand"><img src="assets/logo-mark.svg"><span><b>cloud</b>commerce</span></div><div class="pill">💡 সেলার টিপস</div></div>
+<h1>দাম ঠিক করুন<br><span>হিসাব করে</span>,<br>আন্দাজে না</h1>
+<div class="sub">শুধু পণ্যের কেনা দাম ধরলে লস লুকিয়ে থাকে। দাম বসানোর আগে সব খরচ যোগ করুন।</div>
+<div class="rc"><h3>🧾 একটা অর্ডারের আসল খরচ</h3>
+ <div class="row">পণ্যের কেনা দাম<b>✓</b></div>
+ <div class="row">প্যাকেজিং<b>✓</b></div>
+ <div class="row">বিজ্ঞাপন (প্রতি অর্ডারে)<b>✓</b></div>
+ <div class="row">ফেরত পার্সেলের ঝুঁকি<b>✓</b></div>
+ <div class="row">পেমেন্ট/কুরিয়ার চার্জ<b>✓</b></div>
+ <div class="tot">এর উপরে আপনার লাভ<b>＋</b></div>
+</div>
+<div class="grid">
+ <div class="t"><i>🎯</i><div><p>৯৯০ বনাম ১০০০</p><small>রাউন্ড ফিগারের একটু নিচে দাম চোখে কম লাগে</small></div></div>
+ <div class="t"><i>🏷️</i><div><p>আগের দাম কেটে দেখান</p><small>ছাড় থাকলে আসল দামটাও পাশে রাখুন</small></div></div>
+ <div class="t"><i>🎁</i><div><p>কম্বো অফার</p><small>দুটো একসাথে নিলে একটু কম, বিক্রি বাড়ে</small></div></div>
+ <div class="t"><i>🚚</i><div><p>ফ্রি ডেলিভারি বেছে দিন</p><small>দামি পণ্যে ডেলিভারি দামের ভেতরেই ধরুন</small></div></div>
+</div>
+<div class="cta"><b>৩০ দিন ফ্রিতে নিজের ওয়েবসাইট চালিয়ে দেখুন</b><span>ইনবক্স করুন</span></div>
+</body></html>
