@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="reelbase.css">
+<style>
+.app{position:absolute;width:400px;padding:30px;border-radius:34px;background:#fff;box-shadow:0 22px 50px #1b1f6e22;display:flex;align-items:center;gap:22px;font:800 40px PP,NB,sans-serif}
+.app .sq{width:96px;height:96px;border-radius:26px;display:grid;place-items:center;color:#fff;flex:none}
+.app .sq svg{width:54px;height:54px}
+.lbl{position:absolute;padding:8px 18px;border-radius:12px;background:var(--red);color:#fff;font:700 28px HS,sans-serif;opacity:0}
+.prod{position:absolute;left:120px;width:840px;display:flex;align-items:center;gap:28px;padding:30px 36px;border-radius:34px;background:#fff;box-shadow:0 22px 50px #1b1f6e22}
+.prod .sq{width:120px;height:120px;border-radius:32px;display:grid;place-items:center;color:#fff;flex:none}
+.prod .sq svg{width:66px;height:66px}
+.prod b{display:block;font:800 50px PP,NB,sans-serif}.prod span{font:600 30px HS,sans-serif;color:var(--muted)}
+.big{position:absolute;left:0;right:0;text-align:center;font:900 300px PP,NB,sans-serif;color:var(--red)}
+.myth{position:absolute;left:110px;width:860px;padding:44px 46px;border-radius:44px;background:#fff;box-shadow:0 26px 60px #1b1f6e22;font:800 54px/1.35 NB,sans-serif;text-align:center}
+.tog{position:absolute;display:flex;align-items:center;gap:22px;padding:22px 32px;border-radius:26px;background:#fff;box-shadow:0 16px 36px #1b1f6e22;font:700 38px HS,sans-serif}
+.tog .sw{width:110px;height:60px;border-radius:40px;background:#d7d9ea;position:relative}
+.tog .sw i{position:absolute;left:6px;top:6px;width:48px;height:48px;border-radius:50%;background:#fff;box-shadow:0 4px 10px #0003}
+.panel{position:absolute;width:420px;height:520px;border-radius:30px;background:#fff;box-shadow:0 26px 60px #1b1f6e2a;overflow:hidden}
+.panel .hd{padding:24px 26px;color:#fff;font:700 32px HS,PP,sans-serif;display:flex;align-items:center;gap:14px}
+.panel .hd span{width:44px;height:44px}
+.panel .ln{height:46px;border-radius:12px;background:#f0f1f8;margin:22px 26px 0}
+.src{font-style:normal;padding:10px 16px;border-radius:12px;font:800 24px PP,sans-serif;text-align:center}
+.drow2{display:grid;grid-template-columns:130px 1fr 200px;align-items:center;gap:14px;padding:26px 30px;border-bottom:1px solid var(--line);font:600 30px HS,PP,sans-serif}
+.drow2 small{display:block;font:600 22px HS,sans-serif;color:var(--muted)}
+</style></head><body>
+<div id="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
+<div id="gray"></div><div id="endbg"></div>
+<div id="brand"><img src="logo-mark.svg"><span><b>cloud</b>commerce</span></div>
+
+<!-- Q1 -->
+<div class="scene" id="q1">
+  <div class="cap" id="q1a" style="top:330px;font-size:88px">অনলাইনে ব্যবসা করছেন?</div>
+  <div class="cap sm" id="q1b" style="top:560px">ভাবছেন একটা <span class="mark"><i></i><b>ওয়েবসাইট</b></span> দরকার?</div>
+  <div class="tab" id="q1w" style="left:130px;top:800px;height:600px"><div class="bar"><i></i><i></i><i></i><span>www.yourbrand.com</span></div><div class="body"><div class="f" style="height:180px;background:linear-gradient(120deg,#c7d2fe,#fbcfe8)"></div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px"><div class="f" style="height:140px"></div><div class="f" style="height:140px"></div><div class="f" style="height:140px"></div></div></div></div>
+  <div class="abs" id="q1q" style="left:700px;top:700px;width:220px;height:220px;color:var(--orange)" data-ic="circle-help"></div>
+</div>
+
+<!-- Q2/Q3 scattered tools -->
+<div class="scene" id="q2">
+  <div class="cap sm" id="q2a" style="top:260px">কিন্তু শুধু ওয়েবসাইট দিয়ে কি<br><span class="mark r"><i></i><b>সব ঝামেলা মেটে?</b></span></div>
+  <div class="app" id="a1" style="left:90px;top:620px"><div class="sq" style="background:#3a3fd4" data-ic="message-circle"></div>ইনবক্স</div>
+  <div class="app" id="a2" style="left:590px;top:720px;width:400px"><div class="sq" style="background:#f59e0b" data-ic="notebook-pen"></div>অর্ডার</div>
+  <div class="app" id="a3" style="left:90px;top:900px"><div class="sq" style="background:#16a34a" data-ic="truck"></div>কুরিয়ার</div>
+  <div class="app" id="a4" style="left:590px;top:1000px;width:400px"><div class="sq" style="background:#e2136e" data-ic="wallet"></div>অগ্রিম</div>
+  <div class="lbl" style="left:100px;top:300px">আলাদা অ্যাপ</div><div class="lbl" style="left:700px;top:380px">আলাদা খাতা</div><div class="lbl" style="left:100px;top:920px">আলাদা সাইট</div><div class="lbl" style="left:700px;top:1000px">স্ক্রিনশট</div>
+  <div class="cap sm" id="q2b" style="top:640px;opacity:0">সবকিছুর জন্য<br><span class="mark r"><i></i><b>আলাদা আলাদা জায়গা</b></span></div>
+</div>
+
+<!-- Q4 all together -->
+<div class="scene" id="q4">
+  <img class="abs" id="q4logo" src="logo-mark.svg" style="left:430px;top:260px;width:220px;height:220px;border-radius:56px;box-shadow:0 30px 70px #3a3fd466">
+  <div class="cap sm" id="q4a" style="top:540px"><b style="color:var(--indigo)">Cloud Commerce</b>-এ পাবেন সবকিছু,<br><span class="mark o" id="q4m"><i></i><b>একসাথে</b></span></div>
+  <div class="prod" id="p1" style="top:820px"><div class="sq" style="background:#be185d" data-ic="store"></div><div><b>ওয়েবসাইট</b><span>নিজের ব্র্যান্ডের অনলাইন দোকান</span></div></div>
+  <div class="prod" id="p2" style="top:1030px"><div class="sq" style="background:#3a3fd4" data-ic="bot"></div><div><b>AI চ্যাটবট</b><span>বাংলায় কথা বলে, অর্ডার নেয়</span></div></div>
+  <div class="prod" id="p3" style="top:1240px"><div class="sq" style="background:#16a34a" data-ic="wallet"></div><div><b>পেমেন্ট সিস্টেম</b><span>অগ্রিম নেওয়া সহজ ও নিরাপদ</span></div></div>
+</div>
+
+<!-- Q5/Q6 chat -->
+<div class="scene" id="q5">
+  <div class="cap sm" id="q5a" style="top:230px">ইনবক্সে <span class="mark"><i></i><b>AI নিজেই</b></span> কথা বলে</div>
+  <div class="cap sm" id="q5b" style="top:230px;opacity:0">অগ্রিম নিতে চাইলে… <br><span class="mark o"><i></i><b>ইনবক্সেই পেমেন্ট</b></span></div>
+  <div class="phone" id="q5p" style="left:240px;top:430px;width:600px;height:1040px;border-radius:70px"><div class="notch"></div><div class="scr" style="border-radius:58px">
+    <div class="sbar" style="font-size:22px;padding:24px 40px 0"><span>8:40</span><span>●●● 5G</span></div>
+    <div class="chathead" style="padding:30px 30px 20px"><span class="av" style="width:64px;height:64px" data-ic="store"></span><div><b style="font-size:28px">আপনার ব্র্যান্ড</b><small style="font-size:20px">● AI সহকারী অনলাইন</small></div></div>
+    <div class="msgs" id="q5msgs" style="top:170px;padding:24px 22px;gap:16px;justify-content:flex-end;padding-bottom:40px">
+      <div class="bub c qm" id="k1" style="font-size:28px">আপু, এই ড্রেসটা আছে?</div>
+      <div class="bub a qm" id="k2" style="font-size:28px">জি আছে! দেখুন 👇</div>
+      <div class="bub a qm" id="k3" style="padding:10px;width:300px"><div style="height:220px;border-radius:16px;background:linear-gradient(150deg,#fbcfe8,#f472b6);display:grid;place-items:center;color:#9d174d"><span style="width:100px;height:100px;display:block" data-ic="shopping-bag"></span></div><div style="padding:10px 8px 4px;font:700 24px HS,sans-serif">ফ্লোরাল কুর্তি · ৳১,২৫০</div></div>
+      <div class="bub c qm" id="k4" style="font-size:28px">নিবো, মিরপুর ১০</div>
+      <div class="bub a qm" id="k5" style="font-size:28px">অর্ডার নিয়েছি ✅ কনফার্ম করতে ৳১৩০ অগ্রিম দিন 👇<br><u style="font-weight:800">🔒 পেমেন্ট করুন</u></div>
+      <div class="bub a qm" id="k6" style="font-size:28px;background:#16a34a">✅ ৳১৩০ পেয়েছি, ধন্যবাদ! অর্ডার কনফার্ম।</div>
+    </div>
+    <div id="paypg" class="abs" style="left:0;right:0;top:0;bottom:0;background:#f7f7fc;padding:90px 34px 0;opacity:0">
+      <div style="display:flex;align-items:center;gap:12px;font:800 30px PP,HS,sans-serif;color:var(--deep)"><span style="width:50px;height:50px;padding:10px;border-radius:14px;background:var(--indigo);color:#fff" data-ic="shield-check"></span>নিরাপদ পেমেন্ট</div>
+      <div style="margin-top:30px;background:#fff;border-radius:26px;padding:28px;box-shadow:0 6px 18px #1b1f6e12"><span style="font:600 26px HS,sans-serif;color:var(--muted)">এখন দিতে হবে</span><div style="font:800 80px PP,sans-serif;color:var(--deep)">৳১৩০</div><span style="font:600 24px HS,sans-serif;color:var(--muted)">বাকি টাকা পণ্য হাতে পেয়ে</span></div>
+      <div id="paybtn" style="margin-top:30px;height:110px;border-radius:26px;background:var(--indigo);color:#fff;display:grid;place-items:center;font:800 40px NB,sans-serif">🔒 ৳১৩০ পে করুন</div>
+    </div>
+  </div></div>
+  <div class="tag" id="ch1" style="left:40px;top:640px;font-size:34px"><span class="x ok" data-ic="check"></span>ছবি দেখায়</div>
+  <div class="tag" id="ch2" style="left:760px;top:900px;font-size:34px"><span class="x ok" data-ic="check"></span>দাম বলে</div>
+  <div class="tag" id="ch3" style="left:40px;top:1160px;font-size:34px"><span class="x ok" data-ic="check"></span>অর্ডার নেয়</div>
+  <div class="cursor" id="cur5" style="left:1100px;top:1700px;width:64px;height:64px"><svg viewBox="0 0 24 24" width="64" height="64" stroke="#14163f" stroke-width="1.6" stroke-linejoin="round" fill="#fff"><path d="M4 3l7 17 2.5-7.5L21 10z"/></svg></div>
+  <div class="abs" id="q5ok" style="left:190px;top:1500px;width:700px;height:150px;border-radius:40px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;gap:20px;font:800 52px NB,sans-serif;box-shadow:0 24px 50px #16a34a55;opacity:0"><span style="width:70px;height:70px" data-ic="check"></span>অর্ডার কনফার্ম</div>
+</div>
+
+<!-- Q7/Q8 myth -->
+<div class="scene" id="q7">
+  <div class="cap" id="q7a" style="top:340px;font-size:84px">অনেকে ভাবেন…</div>
+  <div class="myth" id="q7m" style="top:600px">"পেমেন্ট সেটআপ না করলে<br>AI কাজই করে না?" <span style="color:var(--red)">🤔</span></div>
+  <div class="big" id="q7no" style="top:520px;opacity:0">না!</div>
+  <div id="q8" style="opacity:0">
+    <div class="cap sm" id="q8a" style="top:300px">অগ্রিম না চাইলে, AI<br><span class="mark"><i></i><b>ক্যাশ অন ডেলিভারিতেই</b></span><br>অর্ডার নেয়</div>
+    <div class="ordc" id="q8o" style="top:720px"><div class="sq" data-ic="package"></div><div><b>নতুন অর্ডার #A1031</b><span>AI নিয়েছে · পেমেন্ট ছাড়াই</span></div><em style="background:#fff1e6;color:#c2510f">COD</em></div>
+    <div class="tog" id="q8t" style="left:200px;top:1000px"><span>অগ্রিম নেওয়া</span><div class="sw" id="sw"><i id="knob"></i></div><b id="swl" style="color:var(--muted)">বন্ধ</b></div>
+    <div class="cap sm" id="q8b" style="top:1200px;opacity:0">পেমেন্ট শুধু <span class="mark o"><i></i><b>আপনি চাইলে</b></span></div>
+  </div>
+</div>
+
+<!-- Q9/Q10 one dashboard -->
+<div class="scene" id="q9">
+  <div class="cap" id="q9a" style="top:300px">আর সবচেয়ে বড় সুবিধা…</div>
+  <div class="panel" id="pw" style="left:70px;top:620px"><div class="hd" style="background:#be185d"><span data-ic="store"></span>ওয়েবসাইট প্যানেল</div><div class="ln"></div><div class="ln"></div><div class="ln" style="width:60%"></div></div>
+  <div class="panel" id="pa" style="left:590px;top:620px"><div class="hd" style="background:#3a3fd4"><span data-ic="bot"></span>AI প্যানেল</div><div class="ln"></div><div class="ln"></div><div class="ln" style="width:60%"></div></div>
+  <div class="abs" id="q9x" style="left:470px;top:780px;width:140px;height:140px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;opacity:0;padding:30px" data-ic="x"></div>
+  <div class="cap sm" id="q9b" style="top:1200px;opacity:0">আলাদা প্যানেল <span class="mark r"><i></i><b>না!</b></span></div>
+  <div class="cap sm" id="q9c" style="top:300px;opacity:0">একটাই ড্যাশবোর্ড,<br><span class="mark"><i></i><b>সব অর্ডার এক জায়গায়</b></span></div>
+  <div class="dash" id="q9d" style="top:620px;opacity:0"><div class="hd"><span data-ic="layout-dashboard"></span>সব অর্ডার</div>
+    <div class="drow2"><b>#A1031</b><span>রাফি · মিরপুর<small>ফ্লোরাল কুর্তি</small></span><em class="src" style="background:#fce7f3;color:#be185d">ওয়েবসাইট</em></div>
+    <div class="drow2"><b>#A1032</b><span>নাদিয়া · খুলনা<small>ওয়েবসাইটের চ্যাট</small></span><em class="src s2" style="background:#e0e7ff;color:#3730a3">WEBAI</em></div>
+    <div class="drow2"><b>#A1033</b><span>সাকিব · সিলেট<small>Facebook ইনবক্স</small></span><em class="src s2" style="background:#dbeafe;color:#1d4ed8">FBAI</em></div>
+    <div class="drow2"><b>#A1034</b><span>তানহা · রংপুর<small>Instagram</small></span><em class="src s2" style="background:#fce7f3;color:#be185d">INAI</em></div>
+    <div class="drow2" style="border:0"><b>#A1035</b><span>মিম · বগুড়া<small>WhatsApp</small></span><em class="src s2" style="background:#dcfce7;color:#15803d">WHAI</em></div>
+  </div>
+  <div class="cap sm" id="q9e" style="top:1500px;opacity:0">আলাদা ট্যাগে <span class="mark o"><i></i><b>এক নজরেই</b></span> বোঝা যায়</div>
+</div>
+
+<!-- Q11 CTA -->
+<div class="scene" id="q11">
+  <div class="cap" id="q11a" style="top:420px">এক জায়গা থেকে<br><span class="mark"><i></i><b>পুরো ব্যবসা</b></span></div>
+  <div class="abs" id="q11rib" style="left:340px;top:760px;padding:18px 44px;border-radius:999px;background:#ffe7d6;color:#c2510f;font:800 48px NB,sans-serif">🎁 ফ্রি ট্রায়াল</div>
+  <div class="cap" id="q11c" style="top:900px;font-size:88px">ফ্রিতে চালিয়ে দেখুন</div>
+  <div class="abs" id="q11btn" style="left:140px;top:1130px;width:800px;height:180px;border-radius:50px;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;gap:26px;font:800 74px NB,sans-serif;box-shadow:0 30px 70px #ff8a3d66">আজই ইনবক্স করুন <span style="width:76px;height:76px" data-ic="send"></span></div>
+  <div class="cursor" id="cur6" style="left:1100px;top:1700px;width:64px;height:64px"><svg viewBox="0 0 24 24" width="64" height="64" stroke="#14163f" stroke-width="1.6" stroke-linejoin="round" fill="#fff"><path d="M4 3l7 17 2.5-7.5L21 10z"/></svg></div>
+  <div class="ripple" id="rip6" style="width:130px;height:130px;border-color:#fff"></div>
+</div>
+
+<!-- Q12 end -->
+<div class="scene" id="q12">
+  <div class="abs" id="q12ring" style="left:365px;top:420px;width:350px;height:350px;border-radius:50%;border:5px solid #ffffff55"></div>
+  <img class="abs" id="q12logo" src="logo-mark.svg" style="left:430px;top:485px;width:220px;height:220px;border-radius:56px;box-shadow:0 30px 80px #0006">
+  <div class="abs center" id="q12name" style="top:780px;font:800 110px PP,sans-serif;color:#fff;letter-spacing:-.02em"><span>cloud</span><span style="font-weight:500">commerce</span></div>
+  <div class="abs center D" id="q12t1" style="top:990px;font-size:84px;color:#fff">আপনার ব্যবসা,</div>
+  <div class="abs center D" id="q12t2" style="top:1110px;font-size:92px;color:var(--orange)">আমাদের প্রযুক্তি</div>
+  <div class="abs center" id="q12row" style="top:1320px;font:600 34px PP,sans-serif;color:#c7c9f5">ওয়েবসাইট · AI চ্যাটবট · পেমেন্ট</div>
+</div>
+
+<script src="icons.js"></script>
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script src="reel2.js"></script>
+</body></html>
