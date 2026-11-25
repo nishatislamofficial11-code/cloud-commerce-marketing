@@ -1,0 +1,209 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="style.css">
+<style>
+html,body{width:1080px;height:1920px}
+#bg .b1{width:900px;height:900px;left:-300px;top:-250px}
+#bg .b2{width:800px;height:800px;right:-300px;bottom:-200px}
+#sky{position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,#ffb88a 0%,#f59e8b 35%,#7a5ad6 100%)}
+#gray{position:absolute;inset:0;opacity:0;background:#2a2c44}
+#morning{position:absolute;inset:0;opacity:0;background:radial-gradient(900px 700px at 80% 10%,#fff1c9,transparent 70%),#f7f8ff}
+#brand{left:60px;top:70px}
+.cap{position:absolute;left:60px;right:60px;text-align:center;font:800 76px/1.25 PP,NB,sans-serif;color:var(--ink)}
+.cap.sm{font-size:60px}
+.light .cap,.cap.l{color:#fff}
+.clock{position:absolute;width:300px;height:300px;border-radius:50%;background:#fff;box-shadow:0 30px 70px #1b1f6e30,0 0 0 14px #ffffffaa}
+.clock i{position:absolute;left:50%;bottom:50%;transform-origin:50% 100%;border-radius:8px;background:var(--deep)}
+.clock .hh{width:14px;height:80px;margin-left:-7px}
+.clock .mm{width:9px;height:115px;margin-left:-4.5px;background:var(--orange)}
+.clock .c{position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px;border-radius:50%;background:var(--deep)}
+.clock .tk{position:absolute;left:50%;top:14px;width:6px;height:22px;margin-left:-3px;border-radius:3px;background:#c9cbe6;transform-origin:50% 136px}
+.digi{position:absolute;padding:14px 30px;border-radius:22px;background:var(--deep);color:#fff;font:800 56px PP,NB,sans-serif;box-shadow:0 18px 40px #1b1f6e40}
+.badge{position:absolute;min-width:110px;height:110px;padding:0 20px;border-radius:60px;background:var(--red);color:#fff;display:grid;place-items:center;font:800 56px PP,sans-serif;box-shadow:0 16px 40px #e5484d66}
+.qb{position:absolute;padding:20px 30px;border-radius:30px 30px 30px 8px;background:#fff;box-shadow:0 16px 36px #1b1f6e22;font:700 44px HS,sans-serif}
+.paper{position:absolute;left:180px;top:620px;width:720px;height:760px;border-radius:24px;background:#fffdf3;box-shadow:0 30px 70px #1b1f6e2a;background-image:repeating-linear-gradient(#fffdf3 0 62px,#d8e3ff 62px 64px);padding:90px 60px 0 110px;border-left:8px solid #f59e8b}
+.paper div{height:64px;font:600 40px HS,sans-serif;color:#2b3a8a;white-space:nowrap;overflow:hidden;width:0}
+.tab{position:absolute;width:820px;height:520px;border-radius:24px;background:#fff;box-shadow:0 26px 60px #1b1f6e2a;overflow:hidden}
+.tab .bar{height:56px;background:#eef0f8;display:flex;align-items:center;gap:8px;padding:0 20px}
+.tab .bar i{width:14px;height:14px;border-radius:50%;background:#d0d3e6}
+.tab .bar span{margin-left:14px;padding:6px 18px;border-radius:12px 12px 0 0;background:#fff;font:600 20px PP,HS,sans-serif;color:var(--muted)}
+.tab .body{padding:30px 36px;font:600 30px HS,sans-serif;color:var(--muted)}
+.tab .f{height:56px;border-radius:12px;background:#f2f3f9;margin-bottom:16px}
+.tab .btn{width:260px;height:64px;border-radius:14px;background:#16a34a;color:#fff;display:grid;place-items:center;font:700 28px HS,sans-serif}
+.shot{position:absolute;width:300px;height:420px;border-radius:26px;background:linear-gradient(160deg,#e2136e,#a50d52);color:#fff;padding:26px;font:600 26px/1.6 PP,sans-serif;box-shadow:0 24px 50px #1b1f6e33}
+.shot b{font-size:34px}
+.vhs{position:absolute;left:0;right:0;height:14px;background:#ffffff55;opacity:0}
+.ordc{position:absolute;left:120px;width:840px;display:flex;align-items:center;gap:24px;padding:26px 30px;border-radius:28px;background:#fff;box-shadow:0 18px 40px #1b1f6e1f}
+.ordc .sq{width:84px;height:84px;border-radius:22px;background:var(--green);color:#fff;display:grid;place-items:center;flex:none}
+.ordc .sq svg{width:46px;height:46px}
+.ordc b{display:block;font:800 38px PP,NB,sans-serif}.ordc span{font:600 28px HS,sans-serif;color:var(--muted)}
+.ordc em{margin-left:auto;font-style:normal;padding:10px 18px;border-radius:14px;background:#dcfce7;color:#15803d;font:700 26px HS,sans-serif}
+.dash{position:absolute;left:90px;top:560px;width:900px;border-radius:30px;background:#fff;box-shadow:0 30px 70px #1b1f6e2a;overflow:hidden}
+.dash .hd{display:flex;align-items:center;gap:16px;padding:26px 30px;background:var(--deep);color:#fff;font:700 32px HS,PP,sans-serif}
+.dash .hd span{width:48px;height:48px;padding:10px;border-radius:14px;background:#3a3fd4}
+.drow{display:grid;grid-template-columns:150px 1fr 230px;align-items:center;gap:16px;padding:28px 30px;border-bottom:1px solid var(--line);font:600 30px HS,PP,sans-serif}
+.drow em{font-style:normal;text-align:center;padding:14px;border-radius:14px;background:#3a3fd4;color:#fff;font:700 24px HS,sans-serif}
+.sms2{position:absolute;left:130px;width:820px;padding:24px 30px;border-radius:26px;background:#fff;box-shadow:0 20px 50px #1b1f6e33;font:600 30px/1.45 HS,PP,sans-serif}
+.sms2 small{display:block;font:700 24px PP,HS,sans-serif;margin-bottom:6px}
+.ck2{position:absolute;left:220px;display:flex;align-items:center;gap:20px;padding:20px 34px;border-radius:24px;background:#fff;box-shadow:0 14px 34px #1b1f6e22;font:700 42px HS,sans-serif}
+.ck2 span{width:56px;height:56px;padding:12px;border-radius:50%;background:var(--green);color:#fff}
+.steam{position:absolute;width:16px;height:90px;border-radius:16px;background:linear-gradient(#3a3fd400,#3a3fd466);filter:blur(4px);opacity:0}
+.think{position:absolute;left:150px;top:520px;width:780px;height:420px;border-radius:200px;background:#fff;box-shadow:0 26px 60px #1b1f6e22;display:flex;align-items:center;justify-content:center;gap:40px}
+.think .p{width:150px;height:150px;border-radius:40px;display:grid;place-items:center;color:#fff}
+.think .p svg{width:80px;height:80px}
+.gear{position:absolute;color:var(--indigo)}
+#r10,#r11{top:160px;bottom:-160px}
+#r7orders{transform:translateY(80px)}
+</style></head><body>
+<div id="bg"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grain"></div></div>
+<div id="sky"></div><div id="gray"></div><div id="morning"></div>
+<div id="endbg"></div>
+<div id="brand"><img src="logo-mark.svg"><span><b>cloud</b>commerce</span></div>
+
+<!-- R1 morning, 50 messages -->
+<div class="scene" id="r1">
+  <div class="cap" id="r1a" style="top:250px;font-size:96px">ভাবুন তো…</div>
+  <div class="clock" id="clk" style="left:390px;top:470px"><div class="tk"></div><div class="tk" style="transform:rotate(90deg)"></div><div class="tk" style="transform:rotate(180deg)"></div><div class="tk" style="transform:rotate(270deg)"></div><i class="hh" id="hh"></i><i class="mm" id="mm"></i><div class="c"></div></div>
+  <div class="digi" id="digi" style="left:340px;top:820px;width:400px;text-align:center">সকাল ৯টা</div>
+  <div class="phone" id="r1p" style="left:365px;top:1010px;height:560px;width:350px"><div class="notch"></div><div class="scr" style="display:grid;place-items:center;background:linear-gradient(160deg,#3a3fd4,#1b1f6e)"><span style="width:170px;height:170px;color:#fff" data-ic="message-circle"></span></div></div>
+  <div class="badge" id="r1b" style="left:640px;top:980px"><span id="r1n">০</span></div>
+  <div class="cap sm" id="r1c" style="top:1620px">ইনবক্সে <span class="mark r"><i></i><b>৫০টা মেসেজ</b></span> জমে আছে</div>
+</div>
+
+<!-- R2 questions -> noon -->
+<div class="scene" id="r2">
+  <div class="qb" style="left:90px;top:330px">দাম কত?</div>
+  <div class="qb" style="left:440px;top:470px">স্টকে আছে?</div>
+  <div class="qb" style="left:120px;top:620px">ডেলিভারি চার্জ কত?</div>
+  <div class="qb" style="left:560px;top:760px">সাইজ কী কী?</div>
+  <div class="qb" style="left:80px;top:880px">ছবি দেন</div>
+  <div class="qb" style="left:420px;top:1000px">কবে পাব?</div>
+  <div class="digi" id="r2d" style="left:330px;top:1180px;width:420px;text-align:center">দুপুর ১টা</div>
+  <div class="cap sm" id="r2c" style="top:1380px">উত্তর দিতে দিতেই<br><span class="mark o"><i></i><b>দুপুর!</b></span></div>
+</div>
+
+<!-- R3 notebook + courier tabs -->
+<div class="scene" id="r3">
+  <div class="cap sm" id="r3a" style="top:300px">তারপর <span class="mark"><i></i><b>খাতায় অর্ডার লেখা…</b></span></div>
+  <div class="paper" id="paper"><div>১. রাফি - কুর্তি - মিরপুর</div><div>২. নাদিয়া - শাড়ি - খুলনা</div><div>৩. সাকিব - ঘড়ি - সিলেট</div><div>৪. তানহা - ওড়না - রংপুর</div><div>৫. মিম - থ্রি-পিস - বগুড়া</div></div>
+  <div class="cap sm" id="r3b" style="top:300px;opacity:0">কুরিয়ারে <span class="mark o"><i></i><b>একটা একটা করে</b></span><br>বুকিং…</div>
+  <div class="tab t3" style="left:130px;top:640px"><div class="bar"><i></i><i></i><i></i><span>কুরিয়ার বুকিং #১</span></div><div class="body"><div class="f"></div><div class="f"></div><div class="f" style="width:60%"></div><div class="btn">বুক করুন</div></div></div>
+  <div class="tab t3" style="left:130px;top:700px"><div class="bar"><i></i><i></i><i></i><span>কুরিয়ার বুকিং #২</span></div><div class="body"><div class="f"></div><div class="f"></div><div class="f" style="width:60%"></div><div class="btn">বুক করুন</div></div></div>
+  <div class="tab t3" style="left:130px;top:760px"><div class="bar"><i></i><i></i><i></i><span>কুরিয়ার বুকিং #৩</span></div><div class="body"><div class="f"></div><div class="f"></div><div class="f" style="width:60%"></div><div class="btn">বুক করুন</div></div></div>
+  <div class="tab t3" style="left:130px;top:820px"><div class="bar"><i></i><i></i><i></i><span>কুরিয়ার বুকিং #৪</span></div><div class="body"><div class="f"></div><div class="f"></div><div class="f" style="width:60%"></div><div class="btn">বুক করুন</div></div></div>
+</div>
+
+<!-- R4 screenshots -> evening -->
+<div class="scene" id="r4">
+  <div class="cap sm" id="r4a" style="top:300px">আর কেউ <span class="mark"><i></i><b>অগ্রিম</b></span> পাঠালে…</div>
+  <div class="shot s4" style="left:130px;top:600px;transform:rotate(-8deg)"><b>Send Money</b><br>Tk 130<br>TrxID 9F3K…</div>
+  <div class="shot s4" style="left:390px;top:640px;transform:rotate(3deg);background:linear-gradient(160deg,#f7941d,#d9700b)"><b>Send Money</b><br>Tk 250<br>TrxID 7Q2L…</div>
+  <div class="shot s4" style="left:650px;top:600px;transform:rotate(9deg)"><b>Send Money</b><br>Tk 130<br>TrxID 1M8X…</div>
+  <div class="abs" id="r4mag" style="left:300px;top:760px;width:240px;height:240px;color:var(--deep)"><svg viewBox="0 0 24 24" width="240" height="240" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10" cy="10" r="6.5" fill="#ffffff66"/><path d="M15 15l6 6"/></svg></div>
+  <div class="digi" id="r4d" style="left:330px;top:1180px;width:420px;text-align:center;opacity:0">সন্ধ্যা ৭টা</div>
+  <div class="cap sm" id="r4b" style="top:1380px;opacity:0">স্ক্রিনশট মেলাতে মেলাতে<br><span class="mark o"><i></i><b>সন্ধ্যা</b></span></div>
+</div>
+
+<!-- R5 day over -->
+<div class="scene" id="r5">
+  <div class="cap l" id="r5a" style="top:620px;font-size:120px">দিন শেষ…</div>
+  <div class="cap l sm" id="r5b" style="top:860px;font-size:66px;color:#d6d8f5">কিন্তু ব্যবসা বড় করার<br><span style="color:#ff9d5c">সময় কোথায়?</span></div>
+  <div class="abs" id="r5q" style="left:440px;top:1180px;width:200px;height:200px;color:#ffffff55" data-ic="circle-help"></div>
+</div>
+
+<!-- R6 rewind -->
+<div class="scene" id="r6">
+  <div class="vhs" style="top:300px"></div><div class="vhs" style="top:760px"></div><div class="vhs" style="top:1300px"></div>
+  <div class="abs" id="r6rw" style="left:420px;top:330px;width:240px;height:240px;color:var(--indigo)" data-ic="rewind"></div>
+  <div class="cap" id="r6a" style="top:640px">এবার একই দিনটা…</div>
+  <img class="abs" id="r6logo" src="logo-mark.svg" style="left:430px;top:850px;width:220px;height:220px;border-radius:56px;box-shadow:0 30px 70px #3a3fd466">
+  <div class="cap" id="r6b" style="top:1120px"><span class="mark"><i></i><b>Cloud Commerce</b></span> দিয়ে</div>
+</div>
+
+<!-- R7 morning: AI replied -->
+<div class="scene" id="r7">
+  <div class="cap sm" id="r7a" style="top:250px">সকালে ঘুম থেকে উঠে দেখেন…</div>
+  <div class="phone" id="r7p" style="left:240px;top:420px;width:600px;height:880px;border-radius:70px"><div class="notch"></div><div class="scr" style="border-radius:58px">
+    <div class="sbar" style="font-size:22px;padding:24px 40px 0"><span>9:00</span><span>●●● 5G</span></div>
+    <div class="chathead" style="padding:30px 30px 20px"><span class="av" style="width:64px;height:64px" data-ic="store"></span><div><b style="font-size:28px">আপনার ব্র্যান্ড</b><small style="font-size:20px">● AI সহকারী অনলাইন</small></div></div>
+    <div class="msgs" style="top:170px;padding:24px 22px;gap:16px">
+      <div style="align-self:center;font:600 20px HS,sans-serif;color:var(--muted)">রাত ২:১৪</div>
+      <div class="bub c r7m" style="font-size:28px">এই কুর্তিটার দাম কত? 🙂</div>
+      <div class="bub a r7m" style="font-size:28px">জি, দাম ৳১,২৫০। M, L, XL সাইজ আছে। নেবেন?</div>
+      <div class="bub c r7m" style="font-size:28px">হ্যাঁ, মিরপুর ১০ এ পাঠাবেন</div>
+      <div class="bub a r7m" style="font-size:28px;background:#16a34a">✅ অর্ডার কনফার্ম! ধন্যবাদ</div>
+    </div>
+  </div></div>
+  <div class="tag" id="r7t1" style="left:60px;top:560px;font-size:36px"><span class="x" style="background:var(--indigo);width:50px;height:50px;padding:10px" data-ic="bot"></span>AI উত্তর দিয়েছে</div>
+  <div class="tag" id="r7t2" style="left:700px;top:1180px;font-size:36px"><span class="x" style="background:var(--orange);width:50px;height:50px;padding:10px" data-ic="sparkles"></span>বাংলায়</div>
+  <div id="r7orders">
+    <div class="ordc" style="top:560px"><div class="sq" data-ic="package"></div><div><b>অর্ডার #A1027</b><span>রাত ২:১৪ · AI নিয়েছে</span></div><em>কনফার্ম</em></div>
+    <div class="ordc" style="top:760px"><div class="sq" data-ic="package"></div><div><b>অর্ডার #A1028</b><span>রাত ৩:০২ · AI নিয়েছে</span></div><em>কনফার্ম</em></div>
+    <div class="ordc" style="top:960px"><div class="sq" data-ic="package"></div><div><b>অর্ডার #A1029</b><span>ভোর ৫:৪০ · AI নিয়েছে</span></div><em>কনফার্ম</em></div>
+  </div>
+  <div class="cap sm" id="r7b" style="top:1400px;opacity:0">কয়েকটা <span class="mark o"><i></i><b>অর্ডারও নিয়ে নিয়েছে</b></span></div>
+</div>
+
+<!-- R8 dashboard, courier, SMS -->
+<div class="scene" id="r8">
+  <div class="cap sm" id="r8a" style="top:280px">সব অর্ডার <span class="mark"><i></i><b>এক ড্যাশবোর্ডে</b></span></div>
+  <div class="cap sm" id="r8b" style="top:280px;opacity:0">এক ক্লিকে <span class="mark o"><i></i><b>কুরিয়ার বুকিং</b></span></div>
+  <div class="dash" id="r8d"><div class="hd"><span data-ic="layout-dashboard"></span>অর্ডার · ড্যাশবোর্ড</div>
+    <div class="drow"><b>#A1027</b><span>রাফি · মিরপুর</span><em id="bk1">কুরিয়ারে পাঠান</em></div>
+    <div class="drow"><b>#A1028</b><span>নাদিয়া · খুলনা</span><em id="bk2">কুরিয়ারে পাঠান</em></div>
+    <div class="drow" style="border:0"><b>#A1029</b><span>সাকিব · সিলেট</span><em id="bk3">কুরিয়ারে পাঠান</em></div>
+  </div>
+  <div class="cursor" id="cur3" style="left:1100px;top:1500px;width:64px;height:64px"><svg viewBox="0 0 24 24" width="64" height="64" stroke="#14163f" stroke-width="1.6" stroke-linejoin="round" fill="#fff"><path d="M4 3l7 17 2.5-7.5L21 10z"/></svg></div>
+  <div class="ripple" id="rip3" style="width:120px;height:120px"></div>
+  <div class="sms2" id="r8sms" style="top:1180px;opacity:0"><small style="color:var(--indigo)">💬 কাস্টমারের ফোনে SMS</small>আপনার অর্ডার #A1027 কুরিয়ারে পাঠানো হয়েছে। ট্র্যাকিং নম্বর দেওয়া হলো।</div>
+</div>
+
+<!-- R9 payment -->
+<div class="scene" id="r9">
+  <div class="cap sm" id="r9a" style="top:280px">অগ্রিম এসেছে আপনার<br><span class="mark o"><i></i><b>নিজের বিকাশ নম্বরে</b></span></div>
+  <div class="sms2" id="r9sms" style="top:620px"><small style="color:#e2136e">bKash · এখন</small>You have received Tk 130.00 from 017XXXXXXXX. TrxID 9F3K7Q2</div>
+  <div class="cap sm" id="r9b" style="top:280px;opacity:0"><span class="mark"><i></i><b>Cloud Pay</b></span> নিজেই<br>মিলিয়ে নিয়েছে</div>
+  <div class="ck2" style="top:900px"><span data-ic="check"></span>নম্বর মিলেছে</div>
+  <div class="ck2" style="top:1030px"><span data-ic="check"></span>টাকা মিলেছে</div>
+  <div class="ck2" style="top:1160px"><span data-ic="check"></span>TrxID মিলেছে</div>
+  <div class="abs" id="r9ok" style="left:190px;top:1330px;width:700px;height:150px;border-radius:40px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;gap:20px;font:800 52px NB,sans-serif;box-shadow:0 24px 50px #16a34a55"><span style="width:70px;height:70px" data-ic="check"></span>অর্ডার কনফার্ম</div>
+</div>
+
+<!-- R10 you relax -->
+<div class="scene" id="r10">
+  <div class="cap" id="r10a" style="top:330px;font-size:110px">আর আপনি?</div>
+  <div class="abs" id="r10cup" style="left:390px;top:640px;width:300px;height:300px;color:var(--deep)" data-ic="coffee"></div>
+  <div class="steam" style="left:470px;top:560px"></div><div class="steam" style="left:520px;top:540px"></div><div class="steam" style="left:570px;top:560px"></div>
+  <div class="cap sm" id="r10b" style="top:1010px;opacity:0">এক কাপ <span class="mark o"><i></i><b>চা নিয়ে…</b></span></div>
+  <div class="think" id="r10t" style="opacity:0"><div class="p" style="background:#be185d" data-ic="shopping-bag"></div><div class="p" style="background:#f59e0b" data-ic="lightbulb"></div><div class="p" style="background:#16a34a" data-ic="package"></div></div>
+  <div class="cap sm" id="r10c" style="top:1050px;opacity:0">ভাবছেন <span class="mark"><i></i><b>নতুন কোন পণ্য</b></span><br>আনবেন</div>
+</div>
+
+<!-- R11 system works, CTA -->
+<div class="scene" id="r11">
+  <div class="gear" id="g1" style="left:90px;top:380px;width:220px;height:220px" data-ic="cog"></div>
+  <div class="gear" id="g2" style="left:250px;top:540px;width:150px;height:150px;color:var(--orange)" data-ic="cog"></div>
+  <div class="cap" id="r11a" style="top:420px;left:420px;text-align:left">কাজ করুক<br>সিস্টেম…</div>
+  <div class="abs" id="r11up" style="left:390px;top:720px;width:300px;height:300px;color:var(--green)" data-ic="trending-up"></div>
+  <div class="cap" id="r11b" style="top:1040px">আপনি <span class="mark o"><i></i><b>বড় করুন ব্যবসা</b></span></div>
+  <div id="r11cta" style="opacity:0">
+    <div class="abs" id="r11rib" style="left:340px;top:480px;padding:18px 44px;border-radius:999px;background:#ffe7d6;color:#c2510f;font:800 48px NB,sans-serif">🎁 ফ্রি ট্রায়াল</div>
+    <div class="cap" id="r11c" style="top:640px;font-size:92px">ফ্রিতে চালিয়ে দেখুন</div>
+    <div class="abs" id="r11btn" style="left:140px;top:900px;width:800px;height:180px;border-radius:50px;background:var(--orange);color:#fff;display:flex;align-items:center;justify-content:center;gap:26px;font:800 74px NB,sans-serif;box-shadow:0 30px 70px #ff8a3d66">আজই ইনবক্স করুন <span style="width:76px;height:76px" data-ic="send"></span></div>
+  </div>
+  <div class="cursor" id="cur4" style="left:1100px;top:1500px;width:64px;height:64px"><svg viewBox="0 0 24 24" width="64" height="64" stroke="#14163f" stroke-width="1.6" stroke-linejoin="round" fill="#fff"><path d="M4 3l7 17 2.5-7.5L21 10z"/></svg></div>
+  <div class="ripple" id="rip4" style="width:130px;height:130px;border-color:#fff"></div>
+</div>
+
+<!-- R12 end -->
+<div class="scene" id="r12">
+  <div class="abs" id="r12ring" style="left:365px;top:420px;width:350px;height:350px;border-radius:50%;border:5px solid #ffffff55"></div>
+  <img class="abs" id="r12logo" src="logo-mark.svg" style="left:430px;top:485px;width:220px;height:220px;border-radius:56px;box-shadow:0 30px 80px #0006">
+  <div class="abs center" id="r12name" style="top:780px;font:800 110px PP,sans-serif;color:#fff;letter-spacing:-.02em"><span>cloud</span><span style="font-weight:500">commerce</span></div>
+  <div class="abs center D" id="r12t1" style="top:990px;font-size:84px;color:#fff">আপনার ব্যবসা,</div>
+  <div class="abs center D" id="r12t2" style="top:1110px;font-size:92px;color:var(--orange)">আমাদের প্রযুক্তি</div>
+  <div class="abs center" id="r12row" style="top:1320px;font:600 34px PP,sans-serif;color:#c7c9f5">Cloud Commerce · Cloud Chat · Cloud Pay</div>
+</div>
+
+<script src="icons.js"></script>
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script src="reel.js"></script>
+</body></html>
